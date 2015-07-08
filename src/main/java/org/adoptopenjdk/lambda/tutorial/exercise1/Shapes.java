@@ -49,6 +49,7 @@ public class Shapes {
      */
     public static void colorAll(List<Shape> shapes, Color newColor) {
         // [your code here]
+        shapes.forEach(c->c.setColor(newColor));
     }
 
     /**
