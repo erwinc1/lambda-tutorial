@@ -41,8 +41,7 @@ public class Books {
      */
     public static List<String> titlesOf(List<Book> books) {
         // [your code here]
-        
-        return Collections.emptyList();
+        return books.stream().map(Book::getTitle).collect(Collectors.toList());
     }
 
     /**
